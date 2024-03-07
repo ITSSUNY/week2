@@ -45,11 +45,12 @@ pollutantmean <- function(directory, pollutant, id = 1:332){
     ##print(count)
     
   }
-
+  setwd("../")
+  
   totalSum/count
   
   print(totalSum/count)
 
-  setwd("../")
+ 
 
 }

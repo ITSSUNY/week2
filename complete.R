@@ -48,23 +48,24 @@ complete <- function(directory,  id = 1:332){
     ##print(normalCount/4)
     normalCount <-  normalCount /4
     
-    print(paste("MonitorId[", ii, "]:", normalCount/4, sep=" "))
+    ##print(paste("MonitorId[", ii, "]:", normalCount/4, sep=" "))
     
     idData <- c(idData,ii)
     nobsData <-  c(nobsData,normalCount)
     
     
   }
-  print("idData")
-  print(idData)
-  print(nobsData)
+  ##print("idData")
+  ##print(idData)
+  ##print(nobsData)
   
   result <- data.frame(id=idData, nobs = nobsData)
   print(result)
   ##result <- data.frame(id=, bar=)
+  setwd("../")
   
   result
   
-  setwd("../")
+  
 }
   
