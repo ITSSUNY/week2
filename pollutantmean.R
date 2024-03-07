@@ -1,4 +1,8 @@
 pollutantmean <- function(directory, pollutant, id = 1:332){
+
+  
+  ##source("pollutantmean.R")
+  ##pollutantmean("specdata", "sulfate", 1:10)
   
   print(R.version.string)
   
@@ -12,7 +16,7 @@ pollutantmean <- function(directory, pollutant, id = 1:332){
     if(ii<10 ){
       prefix <- paste("00", ii, sep="")
 
-    }else if(ii>= 10 && ii<99){
+    }else if(ii>= 10 && ii<=99){
       prefix <- paste("0", ii, sep="")
       
     }else {
@@ -42,10 +46,10 @@ pollutantmean <- function(directory, pollutant, id = 1:332){
     
   }
 
+  totalSum/count
+  
   print(totalSum/count)
 
- 
-
-
   setwd("../")
+
 }
