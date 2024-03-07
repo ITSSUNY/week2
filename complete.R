@@ -18,7 +18,7 @@ complete <- function(directory,  id = 1:332){
     if(ii<10 ){
       prefix <- paste("00", ii, sep="")
       
-    }else if(ii>= 10 && ii<99){
+    }else if(ii>= 10 && ii<=99){
       prefix <- paste("0", ii, sep="")
       
     }else {
