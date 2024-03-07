@@ -63,6 +63,8 @@ complete <- function(directory,  id = 1:332){
   print(result)
   ##result <- data.frame(id=, bar=)
   
+  result
+  
   setwd("../")
 }
   
